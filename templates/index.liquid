@@ -1,0 +1,5 @@
+<h2>{{ collections['sale-potions'].title }}</h2>
+
+{% for product in collections['sale-potions'].products %}
+    {% render 'product-item', product:product %}
+{% endfor %}
